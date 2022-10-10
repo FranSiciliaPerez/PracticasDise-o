@@ -10,22 +10,49 @@ namespace PracticasDiseñoI
     {
         static void Main(string[] args)
         {
-            //Área del círculo
-            Console.WriteLine("Por favor, añade el radio del circulo");
-            int radio_circulo = int.Parse(Console.ReadLine());
-            double area = Math.Pow(radio_circulo, 2) * Math.PI;
-            Console.WriteLine($"El área del circulo de radio {radio_circulo} es: {area}");
-           
-            //Practica 1();
-            //Practica 2();
+            //Practica1();
+            Practica2();
+            //Practica3();         
+
         }
         #region Practica 1
         static void Practica1()
         {
-            Console.WriteLine("Practica 1");
+            //Área del círculo
+                Console.WriteLine("Por favor, añade el radio del circulo");
+                int radio_circulo = int.Parse(Console.ReadLine());
+                double area = Math.Pow(radio_circulo, 2) * Math.PI;
+                Console.WriteLine($"El área del circulo de radio {radio_circulo} es: {area}");
         }
         #endregion
+        #region Practica 2
+        static void Practica2()
+        {
+            const int PUEDE_CONDUCIR = 18;
+            const string TIENE_CARNET = "S";
 
+            Console.WriteLine("Vamos a evaluar si puedes conducir");
+            Console.WriteLine("Introduce tu edad por favor:");
+            int edad = Int32.Parse(Console.ReadLine().ToUpper());
+
+            Console.WriteLine("¿Tienes carnet?(S/N)");
+            string carnet = Console.ReadLine().ToUpper();
+            
+            if ((edad >= PUEDE_CONDUCIR))
+            {
+                Console.WriteLine("Puedes conducir");
+            }
+            else if(String.Equals(carnet, TIENE_CARNET))
+            {
+                Console.WriteLine("No puedes conducir");
+            }
+            else
+            {
+                Console.WriteLine("No puedes conducir");
+            }
+
+        }
+        #endregion
         #region Practica 3
         static void Practica3()
         {
