@@ -15,6 +15,22 @@ namespace PracticasDiseñoI
             int radio_circulo = int.Parse(Console.ReadLine());
             double area = Math.Pow(radio_circulo, 2) * Math.PI;
             Console.WriteLine($"El área del circulo de radio {radio_circulo} es: {area}");
+           
+            //Practica 1();
+            //Practica 2();
         }
+        #region Practica 1
+        static void Practica1()
+        {
+            Console.WriteLine("Practica 1");
+        }
+        #endregion
+
+        #region Practica 3
+        static void Practica3()
+        {
+            Console.WriteLine("Practica 3");
+        }
+        #endregion
     }
 }
