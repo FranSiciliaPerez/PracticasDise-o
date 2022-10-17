@@ -11,8 +11,8 @@ namespace PracticasDiseñoI
         static void Main(string[] args)
         {
             //Practica1();
-            Practica2();
-            //Practica3();         
+            //Practica2();
+            Practica3();         
 
         }
         #region Practica 1
@@ -72,7 +72,7 @@ namespace PracticasDiseñoI
                 }
                 else
                 {
-                    Console.WriteLine("Debe teclear S o N");
+                    Console.WriteLine("Debe introducir 'S' o 'N'");
                 }
             } while (!respuesta.Equals("S") && !respuesta.Equals("N"));
         }
