@@ -59,16 +59,16 @@ namespace PracticasDiseñoI
 
             do
             {
-                Console.WriteLine("Quieres entrar?: 'S' o 'N'");
+                Console.WriteLine("Quieres entrar al bucle?: (S/N)");
                 respuesta = Console.ReadLine().ToUpper();
 
                 if (respuesta.Equals("S"))
                 {
-                    Console.WriteLine("Bienvenido");
+                    Console.WriteLine("Bienvenido al bucle");
                 }
                 else if (respuesta.Equals("N"))
                 {
-                    Console.WriteLine("Adios");
+                    Console.WriteLine("Has salido del bucle");
                 }
                 else
                 {
