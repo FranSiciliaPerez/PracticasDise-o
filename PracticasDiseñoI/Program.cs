@@ -50,13 +50,31 @@ namespace PracticasDiseñoI
             {
                 Console.WriteLine("No puedes conducir");
             }
-
         }
         #endregion
         #region Practica 3
         static void Practica3()
         {
-            Console.WriteLine("Practica 3");
+            String respuesta;
+
+            do
+            {
+                Console.WriteLine("Quieres entrar?: 'S' o 'N'");
+                respuesta = Console.ReadLine().ToUpper();
+
+                if (respuesta.Equals("S"))
+                {
+                    Console.WriteLine("Bienvenido");
+                }
+                else if (respuesta.Equals("N"))
+                {
+                    Console.WriteLine("Adios");
+                }
+                else
+                {
+                    Console.WriteLine("Debe teclear S o N");
+                }
+            } while (!respuesta.Equals("S") && !respuesta.Equals("N"));
         }
         #endregion
     }
